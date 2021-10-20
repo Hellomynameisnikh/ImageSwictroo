@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    text-align: center;
+    background-color: lightcoral;
+}
+.n1{
+    margin-top:10px;
+    border: 5px solid purple;
+    font-size: 18px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.n1:hover{
+    animation:n1 2s;
+}
+@keyframes n1{
+    10%{
+        border: 5px dashed purple;
+    }
+    50%{
+        border: 5px solid purple;
+    }
+    100%{
+        background-color: lightskyblue;
+    }
+}
+#light{
+    width: 250px;
+    height: 250px;
+    margin-right:10px;
+    border:2px solid yellow;
+}
+#eidison{
+   width: 250px;
+   height: 250px;
+   margin-left: 10px;
+   border:2px solid yellow;
+}
+#light:hover{
+    animation: rotate 2s;
+    animation: rotate 2s;
+}
+#eidison:hover{
+    animation: rotate 2s;
+}
+@keyframes rotate {
+    10%{
+      border-radius: 10%;
+      border: 5px dashed yellow;
+    }
+    20%{
+        border-radius: 20%;  
+      }
+    30%{
+        border-radius: 30%;  
+      }
+    40%{
+        border-radius: 40%;  
+      }
+    50%{
+        border-radius: 50%;
+        border: 5px solid yellow;
+    }
+100%{
+    transform: rotate(360deg);
+}
+}
+#btn1{
+  background-color: lightsteelblue;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 150px;
+  height: 50px;
+  border: none;
+}
+#btn2{
+    background-color: lightsteelblue;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 150px;
+    height: 50px;
+    border: none;
+}
+#btn1:hover{
+    animation:border2 2s;
+}
+#btn2:hover{
+    animation:border2 2s;
+}
+.n2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.n2:hover{
+    animation:n2rotate 2s;
+}
+@keyframes n2rotate {
+    10%{
+        transform: rotate(90deg);
+        color: yellow;
+    }
+    50%{
+        transform: rotate(180deg);
+        color: violet;
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes border2 {
+    20%{
+        border:5px dotted royalblue  ;
+    }
+    40%{
+        border: 5px double royalblue;
+    }
+    80%{
+        border: 5px dashed royalblue;
+    }
+    100%{
+        border: 5px solid royalblue;
+    }
+}
+.n3{
+        text-align: justify;
+        line-height: 1.6;
+        font-size: 30px;
+        font-family: 'Niconne', cursive;
+        margin-left: 40px;
+        margin-right: 40px;
+}
